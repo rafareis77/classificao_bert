@@ -125,8 +125,3 @@ for epoch in range(num_epochs):
         print(report)
 
 torch.save(model.state_dict(), "bert_classifier.pth")
-
-test_text = "The movie was great and I really enjoyed the performances of the actors."
-sentiment = predict_sentiment(test_text, model, tokenizer, device)
-print("The movie was great and I really enjoyed the performances of the actors.")
-print(f"Predicted sentiment: {sentiment}")
